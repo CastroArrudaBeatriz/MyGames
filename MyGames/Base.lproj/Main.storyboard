@@ -16,8 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q5i-E5-vEn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="GpN-cg-R9X">
+                        <view key="tableFooterView" contentMode="scaleToFill" id="IoE-xt-d7K">
                             <rect key="frame" x="0.0" y="156" width="414" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,28 +35,27 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome da plataforma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-de-7TW">
-                                            <rect key="frame" x="98" y="36.5" width="137.5" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" systemColor="systemGray2Color"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yQV-2q-xHV">
                                             <rect key="frame" x="18" y="10" width="68" height="81"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="68" id="AFy-xC-xFc"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome da plataforma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-de-7TW">
+                                            <rect key="frame" x="98" y="46.5" width="137.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="8yt-de-7TW" secondAttribute="trailing" constant="178.5" id="2Xi-G0-uJo"/>
+                                        <constraint firstItem="8yt-de-7TW" firstAttribute="leading" secondItem="yQV-2q-xHV" secondAttribute="trailing" constant="12" id="33D-rb-ORm"/>
                                         <constraint firstAttribute="trailing" secondItem="YUJ-uG-gqo" secondAttribute="trailing" constant="8" id="Kzo-Gf-KWW"/>
                                         <constraint firstItem="yQV-2q-xHV" firstAttribute="top" secondItem="Kzc-aZ-CMu" secondAttribute="top" constant="10" id="LmB-3p-vA7"/>
+                                        <constraint firstItem="8yt-de-7TW" firstAttribute="top" secondItem="YUJ-uG-gqo" secondAttribute="bottom" constant="16" id="MQC-Oq-3on"/>
                                         <constraint firstItem="yQV-2q-xHV" firstAttribute="leading" secondItem="Kzc-aZ-CMu" secondAttribute="leading" constant="18" id="PxQ-aV-xsG"/>
                                         <constraint firstAttribute="bottom" secondItem="yQV-2q-xHV" secondAttribute="bottom" constant="9" id="Ugm-rC-Ju1"/>
                                         <constraint firstItem="YUJ-uG-gqo" firstAttribute="leading" secondItem="yQV-2q-xHV" secondAttribute="trailing" constant="12" id="fVa-fG-gd4"/>
-                                        <constraint firstItem="8yt-de-7TW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yQV-2q-xHV" secondAttribute="trailing" constant="8" symbolic="YES" id="kJt-Oh-Goz"/>
-                                        <constraint firstItem="8yt-de-7TW" firstAttribute="top" secondItem="YUJ-uG-gqo" secondAttribute="bottom" constant="6" id="myb-Oq-JDY"/>
                                         <constraint firstItem="YUJ-uG-gqo" firstAttribute="top" secondItem="yQV-2q-xHV" secondAttribute="top" id="tmG-jS-A1J"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -263,8 +261,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UJL-p2-XOo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="HIw-XN-TK8">
+                        <view key="tableFooterView" contentMode="scaleToFill" id="emg-Lx-rJm">
                             <rect key="frame" x="0.0" y="99.5" width="414" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -379,7 +376,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7nw-k6-A3d"/>
+        <segue reference="gDL-de-4y2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="console" width="23" height="23"/>
