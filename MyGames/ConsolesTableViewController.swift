@@ -38,7 +38,22 @@ class ConsolesTableViewController: UITableViewController {
         cell.textLabel?.text = console.name
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let console = consolesManager.consoles[indexPath.row]
+        showAlert(with: console)
+        
+        // deselecionar atual cell
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            consolesManager.deleteConsole(index: indexPath.row, context: context)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
     
     @IBAction func addConsoleAction(_ sender: Any) {
         showAlert(with: nil)
@@ -73,5 +88,7 @@ class ConsolesTableViewController: UITableViewController {
         
         present(alert, animated: true, completion: nil)
     }
+    
+    
 
 }
