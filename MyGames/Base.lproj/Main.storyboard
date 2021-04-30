@@ -13,57 +13,55 @@
         <scene sceneID="R9B-gx-A2e">
             <objects>
                 <tableViewController id="MOD-zc-EUd" customClass="GamesTableViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q5i-E5-vEn">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Q5i-E5-vEn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="IoE-xt-d7K">
-                            <rect key="frame" x="0.0" y="156" width="414" height="0.0"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="Z1z-Bw-civ" customClass="GameTableViewCell" customModule="MyGames" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="82" translatesAutoresizingMaskIntoConstraints="NO" id="Z1z-Bw-civ" customClass="GameTableViewCell" customModule="MyGames" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="82"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z1z-Bw-civ" id="Kzc-aZ-CMu">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="Z1z-Bw-civ" id="Kzc-aZ-CMu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yQV-2q-xHV">
+                                            <rect key="frame" x="20" y="8" width="48" height="66"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="62" id="gZz-L5-ruv"/>
+                                                <constraint firstAttribute="width" constant="48" id="x3c-Hl-qqD"/>
+                                            </constraints>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Titulo do Game" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUJ-uG-gqo">
-                                            <rect key="frame" x="98" y="10" width="308" height="20.5"/>
+                                            <rect key="frame" x="88" y="8" width="318" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yQV-2q-xHV">
-                                            <rect key="frame" x="18" y="10" width="68" height="81"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="68" id="AFy-xC-xFc"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome da plataforma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-de-7TW">
-                                            <rect key="frame" x="98" y="46.5" width="137.5" height="18"/>
+                                            <rect key="frame" x="88" y="43" width="298" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" systemColor="systemGray2Color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="8yt-de-7TW" firstAttribute="leading" secondItem="yQV-2q-xHV" secondAttribute="trailing" constant="12" id="33D-rb-ORm"/>
-                                        <constraint firstAttribute="trailing" secondItem="YUJ-uG-gqo" secondAttribute="trailing" constant="8" id="Kzo-Gf-KWW"/>
-                                        <constraint firstItem="yQV-2q-xHV" firstAttribute="top" secondItem="Kzc-aZ-CMu" secondAttribute="top" constant="10" id="LmB-3p-vA7"/>
-                                        <constraint firstItem="8yt-de-7TW" firstAttribute="top" secondItem="YUJ-uG-gqo" secondAttribute="bottom" constant="16" id="MQC-Oq-3on"/>
-                                        <constraint firstItem="yQV-2q-xHV" firstAttribute="leading" secondItem="Kzc-aZ-CMu" secondAttribute="leading" constant="18" id="PxQ-aV-xsG"/>
-                                        <constraint firstAttribute="bottom" secondItem="yQV-2q-xHV" secondAttribute="bottom" constant="9" id="Ugm-rC-Ju1"/>
-                                        <constraint firstItem="YUJ-uG-gqo" firstAttribute="leading" secondItem="yQV-2q-xHV" secondAttribute="trailing" constant="12" id="fVa-fG-gd4"/>
-                                        <constraint firstItem="YUJ-uG-gqo" firstAttribute="top" secondItem="yQV-2q-xHV" secondAttribute="top" id="tmG-jS-A1J"/>
+                                        <constraint firstItem="YUJ-uG-gqo" firstAttribute="leading" secondItem="yQV-2q-xHV" secondAttribute="trailing" constant="20" id="Ceo-ga-WgX"/>
+                                        <constraint firstAttribute="trailing" secondItem="YUJ-uG-gqo" secondAttribute="trailing" constant="8" id="Cra-jS-eCd"/>
+                                        <constraint firstAttribute="bottom" secondItem="yQV-2q-xHV" secondAttribute="bottom" constant="8" id="GuD-55-zXV"/>
+                                        <constraint firstItem="yQV-2q-xHV" firstAttribute="top" secondItem="Kzc-aZ-CMu" secondAttribute="top" constant="8" id="VJL-k2-hP3"/>
+                                        <constraint firstItem="8yt-de-7TW" firstAttribute="leading" secondItem="yQV-2q-xHV" secondAttribute="trailing" constant="20" id="WLx-2Q-KyL"/>
+                                        <constraint firstItem="YUJ-uG-gqo" firstAttribute="top" secondItem="yQV-2q-xHV" secondAttribute="top" id="YRy-Iw-FHg"/>
+                                        <constraint firstItem="yQV-2q-xHV" firstAttribute="leading" secondItem="Kzc-aZ-CMu" secondAttribute="leading" constant="20" symbolic="YES" id="lxS-ut-dJ2"/>
+                                        <constraint firstItem="8yt-de-7TW" firstAttribute="top" secondItem="YUJ-uG-gqo" secondAttribute="bottom" constant="14.5" id="qGH-7y-vao"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="8yt-de-7TW" secondAttribute="trailing" constant="8" id="sh1-Lh-Qb3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ivGame" destination="yQV-2q-xHV" id="mLC-cC-1RL"/>
                                     <outlet property="lbConsole" destination="8yt-de-7TW" id="Bvv-lB-bEq"/>
                                     <outlet property="lbTitle" destination="YUJ-uG-gqo" id="rzv-c6-d26"/>
-                                    <segue destination="xe2-UZ-NKu" kind="show" id="ZjI-Nl-kah"/>
+                                    <segue destination="xe2-UZ-NKu" kind="show" identifier="gameSegue" id="ZjI-Nl-kah"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -75,7 +73,7 @@
                     <navigationItem key="navigationItem" title="Jogos" id="lXO-q6-QQS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="akz-hm-D1P">
                             <connections>
-                                <segue destination="2vN-G3-BRF" kind="show" id="gDL-de-4y2"/>
+                                <segue destination="2vN-G3-BRF" kind="show" identifier="newGameSegue" id="gDL-de-4y2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -214,7 +212,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="M6P-bn-mBf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="M6P-bn-mBf">
                                 <rect key="frame" x="18" y="287" width="378" height="508"/>
                             </imageView>
                         </subviews>
@@ -261,11 +259,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UJL-p2-XOo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="emg-Lx-rJm">
-                            <rect key="frame" x="0.0" y="99.5" width="414" height="0.0"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="oyQ-fO-CWh" style="IBUITableViewCellStyleDefault" id="YqE-0Q-lI8">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
